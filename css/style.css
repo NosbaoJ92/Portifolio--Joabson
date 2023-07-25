@@ -1,0 +1,35 @@
+.BtnCurriculum:hover{
+    filter: drop-shadow(6px 6px #fff);
+}
+
+.form, .projetos-web,.projetos-mobile {
+    background: rgba( 225, 225, 225, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+}
+
+.typing-animation{
+    animation: 
+    blinkCursor 500ms infinite normal, 
+    typing 2s steps(24) 1s normal both;
+}
+
+@keyframes typing {
+   from {
+    width: 0;
+   }
+   to{
+    width: 170px;
+   }
+}
+
+@keyframes blinkCursor {
+   from {
+    border-right-color: rgba(255,255,255,0.75);
+   }
+   to{
+    border-right-color: transparent;
+   }
+}

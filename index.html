@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <link rel="shortcut icon" href="/src/img/icone.png" type="image/png">
+    <title>Joabson Nogueira</title>
+</head>
+<body class="corpo w-screen h-full overflow-x-hidden overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden min-[1140px]:bg-cover" style="background-image: url(/src/img/background.png)">
+    <main class="conteudo-principal w-screen h-screen bg-fixed bg-right bg-no-repeat"  style="background-image: url(/src/img/retrato.png)">
+<!-- Start seção 1 -->
+    <section id="sec1" class="conteudo-principal w-auto h-full p-20 relative overflow-x-hidden" >
+        <div>
+            <div class="textos flex flex-col w-full">
+                <h4 class=" text-lime-400 text-4xl font-bold">PORTIFOLIO</h4>
+                <h1 class="text-8xl text-white font-bold">JOABSON</h1>
+                <h1 class="text-8xl text-white font-bold">NOGUEIRA</h1>
+            </div>
+            
+            <div class="links-social flex gap-3 absolute bottom-20">
+                <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/linkedin.svg" alt=""></a>
+                <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/insta.svg" alt=""></a>
+                <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt=""></a>
+            </div>  
+        </div>
+        <div class="curriculum flex flex-col gap-2 justify-center items-center w-full h-96">
+            <button class="BtnCurriculum bg-slate-50 w-56 h-16 hover:-translate-y-1 hover:-translate-x-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in">
+                <p class="text-xl font-semibold">CURRICULUM</p>
+            </button>
+            <a href="#sec3"><p class="text-white hover:text-lime-400 hover:transition-all delay-125 hover:drop-shadow-xl">CONTATO</p></a>
+        </div>   
+    </section>
+    <div class="seta absolute w-full flex justify-center bottom-8">
+        <a href="#sec2"><img class="w-8 animate-bounce " src="/src/img/seta.svg" alt=""></a>
+    </div>
+<!-- End seção 1 -->  
+
+<!-- Start seção 2 -->
+    <section id="sec2" class="w-full h-full bg-fixed bg-center bg-no-repeat relative"  style="background-image: url(/src/img/retrato2.png)">
+        <div class="seta absolute w-full flex justify-end pr-8 top-8">
+            <a data-popover-target="popover-anterior" data-popover-placement="left" type="button" href="#sec1">
+            <img class="w-8 animate-bounce" src="/src/img/seta1.svg" alt="">
+        </a>
+            <div data-popover id="popover-anterior" role="tooltip" class="absolute z-10 invisible inline-block text-center w-32 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div class="px-3 py-2">
+                    <p>Página anterior</p>
+                </div>
+            </div>
+        </div>
+        <div class="textos flex flex-col w-full pl-20 pt-8"> 
+            <h1 class="text-8xl text-white font-bold">FRONT END</h1>
+            <h4 class=" text-lime-400 text-4xl font-bold">DESENVOLVEDOR</h4>
+        </div>
+        <div class="web-mobile w-full h-full flex pl-20">
+            <div class="web w-6/12 h-4/5 flex flex-col pt-6 pr-36 gap-3">
+                <p class="Skills border-r-2 whitespace-nowrap overflow-hidden typing-animation text-2xl font-bold text-zinc-200">
+                    <button id="AbrirWEB" class="hover:text-lime-400 transition-colors delay-75 " onclick="AbrirWEB()" >WEB</button> <span class="text-lime-400">|</span>
+                    <button id="AbrirMOBILE" class="hover:text-lime-400 transition-colors delay-75" onclick="AbrirMOBILE()" >MOBILE</button>
+                </p>
+                <div id="projetos-web" class="projetos box-border w-10/12 h-4/5 border border-lime-300 rounded-md">
+                    <div id="projetos-web" class="projetos-web w-full h-full flex ">
+                        <div class="images box-content w-full h-full flex flex-wrap gap-4">
+                        </div> 
+                    </div>
+                </div>
+                <div id="projetos-mobile" class="projetos hidden  w-10/12 h-4/5 border border-lime-300 rounded-md">
+                    <div id="projetos-mobile" class="projetos-web w-full h-full flex justify-center items-center gap-2">
+                        <h4 class=" text-lime-400 text-4xl font-bold">mobile</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seta absolute w-full flex justify-end pr-8 bottom-8">
+            <a data-popover-target="popover-proximo" data-popover-placement="left" type="button" href="#sec3"><img class="w-8 animate-bounce" src="/src/img/seta.svg" alt=""></a>
+            <div data-popover id="popover-proximo" role="tooltip" class="absolute z-10 invisible inline-block text-center w-32 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div class="px-3 py-2">
+                    <p>Próxima página</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End seção 2 --> 
+
+<!-- Start seção 3 -->
+    <section id="sec3" class="w-full h-full bg-fixed bg-left bg-no-repeat relative"  style="background-image: url(/src/img/retrato3.png)">
+        <div class="seta absolute z-10 right-8 bottom-8">
+            <a data-popover-target="popover-ultimo" data-popover-placement="left" type="button" href="#sec1"><img class="w-10 hover:scale-125 transition-transform" src="/src/img/seta1.svg" alt=""></a>
+            <div data-popover id="popover-ultimo" role="tooltip" class="absolute z-10 invisible inline-block text-center w-32 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                <div class="px-3 py-2">
+                    <p>Voltar ao topo</p>
+                </div>
+            </div>
+        </div>
+        <div class="form flex flex-col z-0 justify-center items-center border border-lime-400 absolute right-32 top-32 w-6/12 h-3/4">
+            <h4 class=" text-white absolute top-20 text-4xl font-bold">CONTATO</h4> 
+            <form class="w-full h-full flex flex-col justify-center p-36">
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Email</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Telefone</label>
+                    <input type="telephone" id="telefone" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="Digite seu número de telefone" required>
+                </div>
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300 ">Deixe sua mensagem</label>
+                <textarea id="message" rows="4" class="block mb-6 p-2.5 w-full text-sm bg-gray-50 rounded-lg border border-lime-300 focus:ring-lime-300 focus:border-lime-300 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-lime-300 dark:focus:border-lime-300" placeholder="Digite aqui sua mensagem ou comentário..."></textarea>
+                <button type="submit" class="BtnCurriculum bg-slate-50 w-56 h-16 hover:-translate-y-1 hover:-translate-x-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in self-center mt-3">Enviar</button>
+            </form>
+            
+            <div class="links-social flex flex-col justify-center items-center gap-2 absolute bottom-10">
+            <p class="medias text-lime-400 drop-shadow-xl">Redes Sociais</p>
+            <div class="links flex gap-3">
+                <a href="https://www.linkedin.com/in/joabson-nogueira-6a3489177/"><img class="w-8 hover:scale-125 transition-transform	" src="/src/img/linkedin.svg" alt=""></a>
+                <a href="https://www.instagram.com/front_joabsonnogueira/"><img class="w-8 hover:scale-125 transition-transform" src="/src/img/insta.svg" alt=""></a>
+                <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform" src="/src/img/github.svg" alt=""></a>
+            </div>
+                
+            </div>   
+        </div> 
+    </section>
+<!-- End seção 3 --> 
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+</body>
+</html>
