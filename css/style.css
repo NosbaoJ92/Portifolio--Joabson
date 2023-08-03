@@ -33,3 +33,11 @@
     border-right-color: transparent;
    }
 }
+
+html{
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    scroll-snap-align: center;
+}
