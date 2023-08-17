@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="/js/script.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 
     <link rel="shortcut icon" href="/src/img/icone.png" type="image/png">
@@ -57,29 +57,6 @@
             </div> -->
             <!-- <div id="sobre" class="sobre absolute right-52 top-52 -skew-y-6 border-lime-400 shadow-lime-400 w-6/12 h-3/6 border">
             </div> -->
-            <div  class="scroll-container w-full h-full flex flex-col justify-evenly items-center gap-10 relative">
-                <div id="projetos-web" class="selecao hidden w-full h-full ">
-                    <div class="flex flex-col w-full h-full  relative ">
-                        <div class="scroll-projetos snap-y absolute z-30 top-60 left-20 h-2/4 w-64 flex flex-col gap-2 pt-2 overflow-y-auto">
-                            <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
-                            <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36" src="/src/img/swiftcargo.jpg" alt=""></button>
-                            
-                        </div>
-                        
-                    </div>
-                    <div class="frames w-full h-full ">
-                        <div id="artefato" class=" flex hidden absolute right-28 bottom-10 border w-8/12 h-3/4 justify-center items-center gap-2">
-                            <iframe class="artefato  w-full h-full transition-all delay-150" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
-                            <!-- <iframe class="w-4/12 h-2/4 grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe> -->
-                        </div> 
-                        <div id="swift" class=" flex hidden absolute right-28 bottom-10 border w-8/12 h-3/4 justify-center items-center gap-2">
-                            <iframe class="artefato  w-full h-full transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe>
-                            <!-- <iframe class="w-4/12 h-2/4 grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe> -->
-                        </div> 
-                    </div>
-                </div>
-                 
-            </div>
             <div class="textos flex flex-col w-full pl-20 pt-8 absolute z-20 max-[767px]:p-5 max-[767px]:"> 
                 <h1 class="text-8xl text-white font-bold">FRONT END</h1>
                 <h4 class=" text-lime-400 text-4xl font-bold">DESENVOLVEDOR</h4>
@@ -92,8 +69,41 @@
                     </div>
                 </div>
             </div>
-            
-            
+            <div  class="scroll-container w-full h-full flex flex-col justify-evenly items-center gap-10 relative">
+                <div id="projetos-web" class="selecao hidden w-full h-full">
+                    <div class="flex flex-col w-full h-full  relative ">
+                        <div class="scroll-projetos snap-y absolute z-30 top-60 left-20 h-3/5 w-64 flex flex-col gap-3 overflow-y-scroll overflow-x-hidden ">
+                            <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 hover:p-1 transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
+                            <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 hover:p-1 transition-all delay-150" src="/src/img/swiftcargo.jpg" alt=""></button>                                                                                                        
+                        </div>
+                        
+                    </div>
+                    <div id="iframes" class="frames w-full h-full">
+                        <div id="artefato" class="iframe flex hidden absolute z-30 right-28 bottom-10 w-8/12 h-3/4 justify-center  items-center gap-2">
+                            <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 rounded-lg" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
+                        </div> 
+                        <div id="swift" class=" flex hidden absolute z-30 right-28 bottom-10 w-8/12 h-3/4 justify-center items-center gap-2">
+                            <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 rounded-lg" src="https://swift-cargo.netlify.app/"></iframe>
+                        </div> 
+                    </div>
+                   
+                </div>
+                <button id="closeWEB" onclick="FecharWEB()" class="hidden text-xl w-10 h-10 rounded-full font-bold absolute z-40 top-24 right-16 bg-white"><i class="fa-solid fa-xmark"></i></button>
+                <button id="closeMOBILE" onclick="FecharMOBILE()" class="hidden text-xl w-10 h-10 rounded-full font-bold absolute z-40 top-24 right-16 bg-white"><i class="fa-solid fa-xmark"></i></button>
+                <div id="projetos-mobile" class="selecao hidden w-full h-full ">
+                    <div class="flex flex-col w-full h-full  relative ">
+                        <div class="scroll-projetos snap-y absolute z-30 top-60 left-20 h-3/5 w-64 flex flex-col gap-3 overflow-y-scroll overflow-x-hidden ">
+                            <button class="" onclick="AbrirConstrucao()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 hover:p-1 transition-all delay-150" src="/src/img/contrução.png" alt=""></button>                                                                                                      
+                        </div>
+                        
+                    </div>
+                    <div class="frames w-full h-full ">
+                        <div id="construcao" class="iframe flex hidden absolute z-30 right-28 bottom-10 w-8/12 h-3/4 justify-center  items-center gap-2">
+                            <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 rounded-lg" src="/construcao.html" frameborder="0"></iframe>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </section>
 <!-- End seção 2 --> 
 

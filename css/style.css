@@ -44,24 +44,6 @@ section{
     scroll-snap-align: center;
 }
 
-.scroll-container::before,
-.scroll-container::after{
-    background: linear-gradient(to right, rgb(26,27,19, 1)50%, rgba(26,27,19, 0) 100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 8%;
-    z-index: 2;
-}
-
-.scroll-container::before{
-    width: 50%;
-    left: 0;
-    top: 0;
-}
-.scroll-container::after{
-    width: 15%;
-    right: 0;
-    top: 0;
-    transform: rotate(180deg);
-}
+.scroll-projetos::-webkit-scrollbar{ 
+    display: none;
+  }
