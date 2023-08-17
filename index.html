@@ -20,7 +20,7 @@
         <section id="sec1" class="conteudo-principal w-full h-screen p-20 relative max-[767px]:p-0 max-[767px]:w-full" >
             <div  class="">
                 <div class="textos flex flex-col w-full max-[767px]:pl-5">
-                    <h4 class=" text-lime-400 text-4xl font-bold ">PORTIFÓLIO</h4>
+                    <h4 class=" text-lime-400 text-4xl font-bold ">PORTFÓLIO</h4>
                     <h1 class="text-8xl text-white font-bold max-[767px]:text-6xl">
                     JOABSON 
                     <br>
@@ -57,20 +57,28 @@
             </div> -->
             <!-- <div id="sobre" class="sobre absolute right-52 top-52 -skew-y-6 border-lime-400 shadow-lime-400 w-6/12 h-3/6 border">
             </div> -->
-            <div id="projetos-web" class="scroll-container w-full h-full absolute flex flex-col justify-evenly items-center gap-10">
-                <div class="selecao hidden absolute flex flex-col justify-center z-30 left-0 h-3/4 w-64 overflow-y-scroll">
-                    <img class="grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    <img class="grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    <img class="grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    <img class="grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    <img class="grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
-                    <img class="grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt="">
+            <div  class="scroll-container w-full h-full flex flex-col justify-evenly items-center gap-10 relative">
+                <div id="projetos-web" class="selecao hidden w-full h-full ">
+                    <div class="flex flex-col w-full h-full  relative ">
+                        <div class="scroll-projetos snap-y absolute z-30 top-60 left-20 h-2/4 w-64 flex flex-col gap-2 pt-2 overflow-y-auto">
+                            <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
+                            <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36" src="/src/img/swiftcargo.jpg" alt=""></button>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="frames w-full h-full ">
+                        <div id="artefato" class=" flex hidden absolute right-28 bottom-10 border w-8/12 h-3/4 justify-center items-center gap-2">
+                            <iframe class="artefato  w-full h-full transition-all delay-150" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
+                            <!-- <iframe class="w-4/12 h-2/4 grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe> -->
+                        </div> 
+                        <div id="swift" class=" flex hidden absolute right-28 bottom-10 border w-8/12 h-3/4 justify-center items-center gap-2">
+                            <iframe class="artefato  w-full h-full transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe>
+                            <!-- <iframe class="w-4/12 h-2/4 grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe> -->
+                        </div> 
+                    </div>
                 </div>
-                <div class="frames flex absolute right-28 bottom-10 border w-8/12 h-3/4 justify-center items-center gap-2">
-                    <iframe class=" w-full h-full  transition-all delay-150" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0"></iframe>
-                    <!-- <iframe class="w-4/12 h-2/4 grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0"></iframe> -->
-                </div>
-                
+                 
             </div>
             <div class="textos flex flex-col w-full pl-20 pt-8 absolute z-20 max-[767px]:p-5 max-[767px]:"> 
                 <h1 class="text-8xl text-white font-bold">FRONT END</h1>
