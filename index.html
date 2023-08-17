@@ -15,10 +15,10 @@
     <link rel="shortcut icon" href="/src/img/icone.png" type="image/png">
     <title>Joabson Nogueira</title>
 </head>
-<body class="corpo  w-screen h-full overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden min-[1140px]:bg-cover" style="background-image: url(/src/img/background.png)">
+<body class="corpo w-screen h-screen overflow-visible relative bg-fixed bg-top bg-no-repeat overflow-x-hidden min-[1140px]:bg-cover" style="background-image: url(/src/img/background.png)">
     <main class="conteudo-principal w-screen h-screen bg-fixed bg-right bg-no-repeat "  style="background-image: url(/src/img/retrato.png)">
 <!-- Start seção 1 -->
-        <section id="sec1" class="conteudo-principal w-auto h-full p-20 relative overflow-x-hidden max-[767px]:p-0 max-[767px]:w-full" >
+        <section id="sec1" class="conteudo-principal w-full h-screen p-20 relative overflow-x-hidden max-[767px]:p-0 max-[767px]:w-full" >
             <div  class="">
                 <div class="textos flex flex-col w-full max-[767px]:pl-5">
                     <h4 class=" text-lime-400 text-4xl font-bold ">PORTIFÓLIO</h4>
@@ -32,8 +32,8 @@
                     <a href="https://github.com/NosbaoJ92"><img class="w-8 hover:scale-125 transition-transform ease-in-out" src="/src/img/github.svg" alt=""></a>
                 </div>  
             </div>
-            <div class="curriculum flex flex-col gap-2 justify-center items-center w-full h-96 border mt-16 max-[767px]:mt-36">
-                <button class="BtnCurriculum bg-slate-50 w-56 h-16 hover:-translate-y-1 hover:-translate-x-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in">
+            <div class="curriculum flex flex-col gap-2 justify-center items-center w-full h-96 mt-16 max-[767px]:mt-36">
+                <button class="BtnCurriculum bg-slate-50 w-56 h-16 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in">
                     <p class="text-xl font-semibold">CURRICULUM</p>
                 </button>
                 <a href="#sec3"><p class="text-white hover:text-lime-400 hover:transition-all delay-125 hover:drop-shadow-xl hover:font-semibold">CONTATO</p></a>
@@ -45,10 +45,8 @@
 <!-- End seção 1 -->  
 
 <!-- Start seção 2 -->
-        <section id="sec2" class="w-full h-full relative flex justify-center border border-lime-300">
-            <div class="img absolute left-0 h-5/6 w-5/12 bottom-0 self-start flex z-10 max-[767px]:hidden">
-                <img class="object-cover " src="/src/img/retrato2.png" alt="">
-            </div>
+        <section id="sec2" class="w-full h-screen relative flex justify-center ">
+            
            
             <div id="projetos-web" class="scroll-container w-full overflow-hidden h-full absolute flex flex-col justify-evenly items-center gap-10">
                
@@ -85,7 +83,7 @@
 <!-- End seção 2 --> 
 
 <!-- Start seção 3 -->
-        <section id="sec3" class="w-full h-full bg-fixed bg-left bg-no-repeat relative  max-[767px]:m-0"  style="background-image: url(/src/img/retrato3.png)">
+        <section id="sec3" class="w-full h-screen bg-fixed bg-left bg-no-repeat relative  max-[767px]:m-0"  style="background-image: url(/src/img/retrato3.png)">
             <div class="seta absolute z-10 right-8 bottom-8">
                 <a data-popover-target="popover-ultimo" data-popover-placement="left" type="button" href="#sec1"><img class="w-10 hover:scale-125 transition-transform" src="/src/img/seta1.svg" alt=""></a>
                 <div data-popover id="popover-ultimo" role="tooltip" class="absolute z-10 invisible inline-block text-center w-32 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
@@ -94,9 +92,9 @@
                     </div>
                 </div>
             </div>
-            <div class="form flex flex-col z-0 justify-center items-center border border-lime-400 absolute right-32 top-32 w-4/12 h-3/4 max-[767px]:w-full max-[767px]:right-0 max-[767px]:rounded-none  max-[767px]:h-full  max-[767px]:top-0 max-[1024px]:w-8/12">
+            <div class="form flex flex-col z-0 justify-center items-center border border-lime-400 absolute right-32 top-32 w-4/12 h-3/4 max-[767px]:w-full max-[767px]:right-0 max-[767px]:rounded-none  max-[767px]:h-full  max-[767px]:top-0 max-[767px]:border-none min-[768px]:w-8/12 min-[1200px]:w-5/12 ">
                 <h4 class=" text-white absolute top-20 text-4xl font-bold max-[767px]:top-44">CONTATO</h4> 
-                <form class="w-full h-full flex flex-col justify-center p-36 max-[767px]:p-0  max-[767px]:w-10/12  max-[767px]:pt-36  max-[767px]:items-center max-[767px]:">
+                <form class="w-full h-full flex flex-col justify-center p-36 max-[767px]:p-0  max-[767px]:w-10/12  max-[767px]:pt-36  max-[767px]:items-center">
                     <div class="mb-6  max-[767px]:w-full">
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300">Email</label>
                         <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded focus:ring-lime-300 focus:border-lime-300  block w-full p-2.5 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-lime-300 dark:focus:border-lime-300 dark:shadow-sm-light" placeholder="seu-email@provedor.com" required>
@@ -107,7 +105,7 @@
                     </div>
                     <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-lime-300 ">Deixe sua mensagem</label>
                     <textarea id="message" rows="4" class="block mb-6 p-2.5 w-full h-56 text-sm bg-gray-50 rounded border border-lime-300 focus:ring-lime-300 focus:border-lime-300 dark:bg-slate-50 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-lime-300 dark:focus:border-lime-300" placeholder="Digite aqui sua mensagem ou comentário..."></textarea>
-                    <button type="submit" class="BtnCurriculum bg-slate-50 w-56 h-16 hover:-translate-y-1 hover:-translate-x-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in self-center mt-3 font-semibold">Enviar</button>
+                    <button type="submit" class="BtnCurriculum bg-slate-50 w-56 h-16 hover:-translate-y-1 transition-all hover:border border-slate-950 hover:delay-75 hover:bg-lime-400 ease-in self-center mt-3 font-semibold">Enviar</button>
                 </form>
                 
                 <div class="links-social flex flex-col justify-center items-center gap-2 absolute bottom-10">
