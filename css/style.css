@@ -4,7 +4,7 @@
     filter: drop-shadow(6px 6px #fff);
 }
 
-.form, .projetos-web,.projetos-mobile {
+.form {
     background: rgba( 225, 225, 225, 0.05 );
     box-shadow: 0 8px 32px 0 rgba(23, 96, 23, 0.37);
     backdrop-filter: blur( 1.5px );
@@ -46,4 +46,9 @@ section{
 
 .scroll-projetos::-webkit-scrollbar{ 
     display: none;
-  }
+}
+
+.sobre, .Github{
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
