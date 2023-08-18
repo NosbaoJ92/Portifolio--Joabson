@@ -47,25 +47,24 @@
         </div>
 <!-- End seção 1 -->  
 
+        <section id="sec-4" class="sobre w-full h-screen flex border border-lime-400">
+            <div id="sobre" class="textos flex flex-col w-full h-full pl-20 pt-8 absolute z-20">
+                <h1 class="text-8xl text-white font-bold">SOBRE</h1>
+                <h4 class=" text-lime-400 text-4xl font-bold">FORMAÇÃO E SKILLS</h4>
+                <!-- <p class="w-6/12 text-justify text-white text-lg">
+                Olá, me chamo <span class="text-lime-400">Joabson Nogueira</span>, sou da cidade de São Vicente/SP. <br>Atualmente estudante de Desenvolvimento de Sistemas, venho desenvolvendo alguns projetos voltados ao frontend e venho buscando sempre me aperfeiçoar com foco na recolocação no mercado de trabalho. <br>Principais Stacks: <span class="text-lime-400"> HTML</span> | <span class="text-lime-400">CSS</span> | <span class="text-lime-400">JavaScript</span> | <span class="text-lime-400">React Native</span> | <span class="text-lime-400">TailWind CSS</span> | <span class="text-lime-400">Laravel</span>.
+                </p>   -->
+                <div class="w-full h-full ">
+                    <iframe class="w-full h-full" src="/card.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
 <!-- Start seção 2 -->
         <section id="sec2" class="w-full h-screen relative flex justify-center">
-            <!-- <div id="sobre" class="absolute right-64 top-60 w-6/12 h-3/6 z-10 flex flex-col justify-center items-center gap-4">
-                <h1 class="text-4xl font-bold text-white">SOBRE</h1>
-                <p class="w-6/12 text-justify text-white text-lg">
-                Olá, me chamo <span class="text-lime-400">Joabson Nogueira</span>, sou da cidade de São Vicente/SP. <br>Atualmente estudante de Desenvolvimento de Sistemas, venho desenvolvendo alguns projetos voltados ao frontend e venho buscando sempre me aperfeiçoar com foco na recolocação no mercado de trabalho. <br>Principais Stacks: <span class="text-lime-400"> HTML</span> | <span class="text-lime-400">CSS</span> | <span class="text-lime-400">JavaScript</span> | <span class="text-lime-400">React Native</span> | <span class="text-lime-400">TailWind CSS</span> | <span class="text-lime-400">Laravel</span>.
-                </p>
-                
-            </div>
-            <div class="Github rounded-md w-64 absolute flex flex-col right-28 bottom-20 bg-fixed bg-top bg-no-repeat z-30 border border-lime-400 p-2 gap-1" style="background-image: url(/src/img/background.png)">
-                <img class="Most grayscale hover:grayscale-0" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NosbaoJ92&layout=donut" alt="">
-                <p class="fonte text-xs text-stone-600">Fonte: github.com/NosbaoJ92</p>
-            </div>
-            <div id="sobre" class="sobre absolute right-64 top-60 border-lime-400 shadow-lime-400 w-6/12 h-3/6 border"> -->
-
-            </div>
             <div class="textos flex flex-col w-full pl-20 pt-8 absolute z-20 max-[767px]:p-5 max-[767px]:"> 
-                <h1 class="text-8xl text-white font-bold">FRONT END</h1>
-                <h4 class=" text-lime-400 text-4xl font-bold">DESENVOLVEDOR</h4>
+                <h1 class="text-8xl text-white font-bold">PROJETOS</h1>
+                <h4 class=" text-lime-400 text-4xl font-bold">DESENVOLVIDOS</h4>
                 <div class="web-mobile w-full h-full flex">
                     <div class="web w-full h-4/5 flex flex-col pt-6  gap-3">
                         <p class="Skills border-r-2 whitespace-nowrap overflow-hidden typing-animation text-2xl font-bold text-zinc-200">
@@ -93,13 +92,47 @@
                                 <p class="text-sm">FECHAR</p>
                             </button> 
                     </div>
+
+                    <!-- IFRAMES -->
                     <div id="iframes" class="frames w-full h-full">
-                        <div id="artefato" class="iframe flex hidden  absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                        <div id="artefato" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
                             <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0">
                             </iframe>
                             <!-- LINK -->
-                            <div class="seta absolute z-10 bottom-0 left-0">
-                                <a href="https://stunning-swan-8efa50.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-8 text-black text-xs flex justify-center p-2 bg-lime-400">
+                            <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                                <a href="https://stunning-swan-8efa50.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                    <div class="">
+                                        <p>Acessar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div id="swift" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                            <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://swift-cargo.netlify.app/" frameborder="0">
+                            </iframe>
+                            <!-- LINK -->
+                            <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                                <a href="https://swift-cargo.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                                <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                    <div class="">
+                                        <p>Acessar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div id="Myfood" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                            <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://neon-lamington-784d8a.netlify.app/" frameborder="0">
+                            </iframe>
+                            <!-- LINK -->
+                            <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                                <a href="https://neon-lamington-784d8a.netlify.app/" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                 </a>
                                 <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
@@ -110,47 +143,14 @@
                             </div>
                         </div> 
                         
-                        <div id="swift" class="iframe flex hidden absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center items-center gap-2 after:relative">
-                            <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 " src="https://swift-cargo.netlify.app/"></iframe>
-                            <!-- LINK -->
-                            <div class="seta absolute z-10 bottom-0 left-0">
-                                <a href="https://swift-cargo.netlify.app/" target="_blank" data-popover-target="popover-swift" data-popover-placement="right"  class="w-8 text-black text-xs flex justify-center p-2 bg-lime-400">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                                <div data-popover id="popover-swift" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
-                                    <div class="">
-                                        <p>Acessar</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div id="Myfood" class="iframe flex hidden absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center items-center gap-2 after:relative">
-                            <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 " src="https://neon-lamington-784d8a.netlify.app/"></iframe>
-                            <!-- LINK -->
-                            <div class="seta absolute z-10 bottom-0 left-0">
-                                <a href="https://neon-lamington-784d8a.netlify.app/" target="_blank" data-popover-target="popover-myfood" data-popover-placement="right"  class="w-8 text-black text-xs flex justify-center p-2 bg-lime-400">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                                <div data-popover id="popover-myfood" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
-                                    <div class="">
-                                        <p>Acessar</p>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div> 
+                         <!-- BOTÃO DE FECHAMENTO -->
+                        <button id="closeWEB" onclick="FecharWEB()" class="hidden text-xl bg-lime-400 w-10 h-10 flex items-center font-bold absolute z-40 top-24 right-14">
+                        <i class="fa-solid fa-xmark"></i>
+                        </button> 
                     </div>
                   
                 </div>
-                
-                <!-- BOTÕES DE FECHAMENTO -->
-                <button id="closeWEB" onclick="FecharWEB()" class="hidden text-xl bg-lime-400 w-10 h-10 rounded-full font-bold absolute z-40 top-20 right-12">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
 
-                <button id="closeMOBILE" onclick="FecharMOBILE()" class="hidden text-xl bg-lime-400 w-10 h-10 rounded-full font-bold absolute z-40 top-20 right-12">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                
                 <!-- PROJETOS MOBILE -->
                 <div id="projetos-mobile" class="selecao hidden w-full h-full">
                     <div class="flex flex-col w-full h-full relative ">
@@ -159,14 +159,31 @@
                                                                                                                             
                         </div>
                         <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-8 left-56 hover:bg-lime-200 transition-all delay-150">
-                                <p class="text-sm">FECHAR</p>
-                            </button>   
+                            <p class="text-sm">FECHAR</p>
+                        </button>   
                     </div>
-                    <div class="frames w-full h-full ">
-                        <div id="construcao" class="iframe flex hidden absolute z-30 right-28 bottom-10 w-8/12 h-3/4 justify-center  items-center gap-2">
-                            <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 " src="/construcao.html" frameborder="0"></iframe>
-                        </div> 
-                    </div>
+
+                    <!-- IFRAME -->
+                    <div id="construcao" class="iframe flex hidden border-4 border-lime-400 absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                        <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="/construcao.html" frameborder="0">
+                        </iframe>
+                        <!-- LINK -->
+                        <div class="seta absolute z-10 bottom-1 left-1 w-8">
+                            <a href="/construcao.html" target="_blank" data-popover-target="popover-artefato" data-popover-placement="right"  class="w-full text-black text-xs flex justify-center p-2 bg-lime-400">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <div data-popover id="popover-artefato" role="tooltip" class="absolute z-20 invisible inline-block text-center w-16 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 shadow-sm opacity-0 dark:text-black dark:border-gray-600 dark:bg-white">
+                                <div class="">
+                                    <p>Acessar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!-- BOTÃO DE FECHAMENTO -->
+                    <button id="closeMOBILE" onclick="FecharMOBILE()" class="hidden text-xl bg-lime-400 w-10 h-10 flex items-center font-bold absolute z-40 top-24 right-14">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
             </div>
         </section>

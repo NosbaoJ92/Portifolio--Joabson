@@ -56,3 +56,9 @@ section{
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
 }
+
+.sobre{
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
+
