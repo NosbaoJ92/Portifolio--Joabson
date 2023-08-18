@@ -44,7 +44,11 @@ section{
     scroll-snap-align: center;
 }
 
-.scroll-projetos::-webkit-scrollbar{ 
+.scroll-projetos-web, .scroll-projetos-mobile{
+    height: 465px;
+}
+
+.scroll-projetos-web::-webkit-scrollbar, .scroll-projetos-mobile::-webkit-scrollbar{ 
     display: none;
 }
 

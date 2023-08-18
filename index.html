@@ -80,18 +80,21 @@
                 <!-- PROJETOS WEB -->
                 <div id="projetos-web" class="selecao hidden w-full h-full">
                     <div class="flex flex-col w-full h-full relative ">
-                        <div class="scroll-projetos snap-y absolute relative z-30 top-60 left-20 w-64 flex flex-col gap-2 overflow-y-scroll overflow-x-hidden border border-lime-400 p-2">
+                        <div class="scroll-projetos-web snap-y absolute relative z-30 top-60 left-20 w-64 flex flex-col gap-2 overflow-y-scroll overflow-x-hidden border border-lime-400 p-2">
                             <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
                             <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/swiftcargo.jpg" alt=""></button>                                                                                                        
                             <button class="" onclick="AbrirMyFood()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/Myfood.JPG" alt=""></button>      
-                            <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-0 left-36 hover:bg-lime-200 transition-all delay-150">
-                                <p class="text-sm">FECHAR</p>
-                            </button>                                                                                                  
+                            <button class="" onclick="AbrirArtefato()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/ARTEFATO - APRESENTAÇÃO.jpg" alt=""></button>
+                            <button class="" onclick="AbrirSwift()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/swiftcargo.jpg" alt=""></button>                                                                                                        
+                            <button class="" onclick="AbrirMyFood()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/Myfood.JPG" alt=""></button>      
+                                                                                                                             
                         </div>
-                        
+                        <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-8 left-56 hover:bg-lime-200 transition-all delay-150">
+                                <p class="text-sm">FECHAR</p>
+                            </button> 
                     </div>
                     <div id="iframes" class="frames w-full h-full">
-                        <div id="artefato" class="iframe flex hidden  absolute z-30 right-24 bottom-10 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
+                        <div id="artefato" class="iframe flex hidden  absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center  items-center gap-2 after:relative">
                             <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all delay-150" src="https://stunning-swan-8efa50.netlify.app/" frameborder="0">
                             </iframe>
                             <!-- LINK -->
@@ -107,7 +110,7 @@
                             </div>
                         </div> 
                         
-                        <div id="swift" class="iframe flex hidden absolute z-30 right-24 bottom-10 w-8/12 h-3/4 justify-center items-center gap-2 after:relative">
+                        <div id="swift" class="iframe flex hidden absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center items-center gap-2 after:relative">
                             <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 " src="https://swift-cargo.netlify.app/"></iframe>
                             <!-- LINK -->
                             <div class="seta absolute z-10 bottom-0 left-0">
@@ -121,7 +124,7 @@
                                 </div>
                             </div>
                         </div> 
-                        <div id="Myfood" class="iframe flex hidden absolute z-30 right-24 bottom-10 w-8/12 h-3/4 justify-center items-center gap-2 after:relative">
+                        <div id="Myfood" class="iframe flex hidden absolute z-30 right-24 bottom-14 w-8/12 h-3/4 justify-center items-center gap-2 after:relative">
                             <iframe class="iframe w-full h-full grayscale hover:grayscale-0 transition-all delay-150 " src="https://neon-lamington-784d8a.netlify.app/"></iframe>
                             <!-- LINK -->
                             <div class="seta absolute z-10 bottom-0 left-0">
@@ -140,24 +143,24 @@
                 </div>
                 
                 <!-- BOTÕES DE FECHAMENTO -->
-                <button id="closeWEB" onclick="FecharWEB()" class="hidden text-xl bg-lime-400 w-10 h-10 rounded-full font-bold absolute z-40 top-24 right-12">
+                <button id="closeWEB" onclick="FecharWEB()" class="hidden text-xl bg-lime-400 w-10 h-10 rounded-full font-bold absolute z-40 top-20 right-12">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
 
-                <button id="closeMOBILE" onclick="FecharMOBILE()" class="hidden text-xl bg-lime-400 w-10 h-10 rounded-full font-bold absolute z-40 top-24 right-12">
+                <button id="closeMOBILE" onclick="FecharMOBILE()" class="hidden text-xl bg-lime-400 w-10 h-10 rounded-full font-bold absolute z-40 top-20 right-12">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
                 
                 <!-- PROJETOS MOBILE -->
                 <div id="projetos-mobile" class="selecao hidden w-full h-full">
                     <div class="flex flex-col w-full h-full relative ">
-                        <div class="scroll-projetos snap-y absolute relative z-10 top-60 left-20 w-64 flex flex-col gap-3 overflow-y-scroll overflow-x-hidden border border-lime-400 p-2">
+                        <div class="scroll-projetos-mobile snap-y absolute relative z-10 top-60 left-20 w-64 flex flex-col gap-3 overflow-y-scroll overflow-x-hidden border border-lime-400 p-2">
                             <button class="" onclick="AbrirConstrucao()"><img class="snap-center grayscale hover:grayscale-0 w-full h-36 hover:drop-shadow-xl hover:border-2 border-lime-400 transition-all delay-150" src="/src/img/contrução.png" alt=""></button>   
-                            <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-0 left-36 hover:bg-lime-200 transition-all delay-150">
-                                <p class="text-sm">FECHAR</p>
-                            </button>                                                                                                   
+                                                                                                                            
                         </div>
-                        
+                        <button id="closeProjetos" onclick="CloseProjetos()" class=" flex items-center justify-center text-xl w-28 h-6 bg-lime-400 font-bold absolute z-40 bottom-8 left-56 hover:bg-lime-200 transition-all delay-150">
+                                <p class="text-sm">FECHAR</p>
+                            </button>   
                     </div>
                     <div class="frames w-full h-full ">
                         <div id="construcao" class="iframe flex hidden absolute z-30 right-28 bottom-10 w-8/12 h-3/4 justify-center  items-center gap-2">

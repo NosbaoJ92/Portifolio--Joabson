@@ -17,6 +17,7 @@ function AbrirMOBILE() {
     document.getElementById("projetos-mobile").style.display = "block";
     document.getElementById("projetos-web").style.display = "none"; 
     document.getElementById("closeMOBILE").style.display = "none";
+    document.getElementById("closeWEB").style.display = "none";
     document.getElementById("artefato").style.display = "none";
     document.getElementById("swift").style.display = "none";
 }
